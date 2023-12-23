@@ -24,7 +24,7 @@ namespace GematriaWizard.Utility.Extensions
             var equal = ienumerable.Count().Equals(other.Count());
             var index = ienumerable.Count() - 1;
 
-            while (equal)
+            while (equal && index >= 0)
             {
                 equal = ienumerable.ElementAt(index).Equals(other.ElementAt(index));
                 --index;
